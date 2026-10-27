@@ -8,9 +8,11 @@
     "scheme": "jobsemailing",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.himanshu.jobsemailing"
     },
     "android": {
+      "package": "com.himanshu.jobsemailing",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -37,6 +39,16 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "7127b3dd-4439-470f-a1ca-42cd3e6b8c62"
+      }
     }
   }
 }
